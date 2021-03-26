@@ -8,8 +8,8 @@ Welcome to manager Student Program:
 2. Update Student
 3. Delete a Student
 4. View list students
-5. Import file text
-6. Export file text
+5. Import file text / csv
+6. Export file text / csv
 7. Exit
 
 Choose method you want(enter any number from 1 to 7): 

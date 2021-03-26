@@ -89,16 +89,13 @@ public class StudentManager {
 		if (mode == 1) {
 			System.out.println("\n--------LIST STUDENT BY ID ASC---------------");
 			Collections.sort(listStudent, new IdAscSort());
-			// this.sortByIdStudent(1);
 		} else if (mode == 2) {
 			System.out.println("\n--------LIST STUDENT BY ID DESC---------------");
 			Collections.sort(listStudent, new IdDescSort());
 		} else if (mode == 3) {
 			System.out.println("\n--------LIST STUDENT BY SCORE ASC---------------");
 			Collections.sort(listStudent, new ScoreAscSort());
-
 		} else if (mode == 4) {
-			// this.sortByScoreStudent(-1);
 			System.out.println("\n--------LIST STUDENT BY SCORE DESC---------------");
 			Collections.sort(listStudent, new ScoreDescSort());
 		}
@@ -141,8 +138,8 @@ public class StudentManager {
 			temp = scanner.next();
 			part = temp.split("\n");
 			note = part[0];
-			if (note.length() >= 1)
-				note = note.replace(note.substring(note.length() - 1), "");
+//			if (note.length() >= 1 && file.contains(".txt") != true)
+//				note = note.replace(note.substring(note.length() - 1), "");
 			listStudent.add(new Student(id, name, score, image, address, note));
 			// System.out.print(scanner.next() + "|");
 

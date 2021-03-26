@@ -60,17 +60,17 @@ public class Example {
 			case 4:
 				// 4. View list students
 				System.out.println("\n---------------4: VIEW STUDENT ---------------");
-				System.out.println("Choose mode view: ");
+				System.out.println("Please choose MODE VIEW: ");
 				System.out.println("Filter by ID: ");
 				System.out.println("\t1: ID ASC ");
 				System.out.println("\t2: ID DESC");
 				System.out.println("Filter by Score:");
 				System.out.println("\t3:  SCORE ASC");
 				System.out.println("\t4:  SCORE DESC");
-				System.out.print("Your Choose: ");
+				System.out.println("\t5:  Default mode");
+				System.out.print("Your Choose(-1 to exit): ");
 				int mode = scanner.nextInt();
-				if (mode < 1 || mode > 4) {
-					System.out.println("\nWARNING !!! you should choose from 1 to 4");
+				if (mode == -1) {
 					break;
 				}
 				studentManager.viewStudent(mode);
@@ -78,7 +78,7 @@ public class Example {
 			case 5:
 				// 5. Import file text
 				System.out.println("\n---------------5: IMPORT FILE CSV ---------------");
-				System.out.print("\nInput link file that you want to import: ");
+				System.out.print("\nInput link file that you want to imports: ");
 				file = scanner.nextLine();
 				file = scanner.nextLine();
 				// System.out.println("Name File " + file);
@@ -96,7 +96,12 @@ public class Example {
 			default:
 				// 7. Exit
 				studentManager.saveFile();
-				System.out.print("Goodbye see you next time. Tks you.");
+				System.out.println(
+						"------------------------------------------------------------------------------------------");
+				System.out.println("\t\t\tGoodbye see you next time. Tks you.");
+				System.out.println(
+						"------------------------------------------------------------------------------------------");
+
 				return;
 			}
 		}
