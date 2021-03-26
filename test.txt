@@ -1,0 +1,6 @@
+ID,Name,Score,Image,Address,Note
+18120632,Nguyen Ba Tien,5.5,link image,Dak Lak,Bad
+18120635,Thai Hung Vu,7.0,link image,Gia Lai,Don't waste your time
+18120636,Tran Ngoc Tuan,7.5,link image,BMT,Good
+18120639,Vo Kiem Huy,5.0,link image,Kom Tum,Let's it go
+18120650,Dai Tien Huy,7.6,https://www.youtube.com,Hoi An,Qua ngay hom qua

@@ -56,6 +56,7 @@ public class StudentManager {
 
 	public void addStudent(Student s) {
 		listStudent.add(s);
+		System.out.println("\n========\tADD STUDENT SUCCESSED\t============");
 	}
 
 	public void clearAllStudent() {
@@ -69,6 +70,8 @@ public class StudentManager {
 			return;
 		}
 		listStudent.get(index).updateStudent();
+		System.out.println("\n========\tUPDATE STUDENT SUCCESSED\t============");
+
 	}
 
 	public void deleteStudent(int index) {
@@ -77,6 +80,8 @@ public class StudentManager {
 			return;
 		}
 		listStudent.remove(index);
+		System.out.println("\n========\tDELETE STUDENT " + index + " SUCCESSED\t============");
+
 	}
 
 	// View Student by Score and ID
@@ -145,10 +150,10 @@ public class StudentManager {
 
 		}
 		scanner.close();
+		System.out.println("\n========\tIMPORT FILE SUCCESSED\t============");
 	}
 
 	public void exportFileCSV(String file) {
-		System.out.println("Export file");
 		try {
 			PrintWriter printWriter = new PrintWriter(new File(file));
 			StringBuilder stringBuilder = new StringBuilder();
@@ -159,13 +164,14 @@ public class StudentManager {
 			}
 			// System.out.println(stringBuilder.toString());
 			printWriter.write(stringBuilder.toString());
-			System.out.println("done!");
+			System.out.println("\n========\tEXPORT FILE SUCCESSED\t============");
 			printWriter.close();
 
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println(e);
 		}
+
 	}
 
 	public void readFile() throws Exception {

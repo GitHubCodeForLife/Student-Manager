@@ -32,14 +32,14 @@ public class Example {
 			switch (n) {
 			case 1:
 				// 1. Add Students
-				System.out.println("\n---------------1: ADD STUDENT ---------------");
+				System.out.println("\n***********\t\t1: ADD STUDENT \t\t***********");
 				Student s = new Student();
 				s.inputStudent();
 				studentManager.addStudent(s);
 				break;
 			case 2:
 				// 2. Update Students
-				System.out.println("\n---------------2: UPDATE STUDENT ---------------");
+				System.out.println("\n***********\t\t2: UPDATE STUDENT\t\t***********");
 				studentManager.viewStudent(0);
 				System.out.print("\nInput position that you want to update (-1 to exit delete mode): ");
 				index = scanner.nextInt();
@@ -49,7 +49,7 @@ public class Example {
 				break;
 			case 3:
 				// 3. Delete a Students
-				System.out.println("\n---------------3: DELETE STUDENT ---------------");
+				System.out.println("\n***********\t\t3: DELETE STUDENT \t\t***********");
 				studentManager.viewStudent(0);
 				System.out.print("\nInput position that you want to delete (-1 to exit delete mode): ");
 				index = scanner.nextInt();
@@ -59,7 +59,7 @@ public class Example {
 				break;
 			case 4:
 				// 4. View list students
-				System.out.println("\n---------------4: VIEW STUDENT ---------------");
+				System.out.println("\n***********\tt\t4: VIEW STUDENT \t\t***********");
 				System.out.println("Please choose MODE VIEW: ");
 				System.out.println("Filter by ID: ");
 				System.out.println("\t1: ID ASC ");
@@ -77,7 +77,7 @@ public class Example {
 				break;
 			case 5:
 				// 5. Import file text
-				System.out.println("\n---------------5: IMPORT FILE CSV ---------------");
+				System.out.println("\n***********\t\t5: IMPORT FILE CSV \t\t***********");
 				System.out.print("\nInput link file that you want to imports: ");
 				file = scanner.nextLine();
 				file = scanner.nextLine();
@@ -86,7 +86,7 @@ public class Example {
 				break;
 			case 6:
 				// 6. Export file text
-				System.out.println("\n---------------6: EXPORT FILE CSV ---------------");
+				System.out.println("\n***********\t\t6: EXPORT FILE CSV \t\t***********");
 				System.out.print("\nInput link file that you want to exports: ");
 				file = scanner.nextLine();
 				file = scanner.nextLine();
