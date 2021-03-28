@@ -77,7 +77,7 @@ public class Example {
 				break;
 			case 5:
 				// 5. Import file text
-				System.out.println("\n***********\t\t5: IMPORT FILE CSV \t\t***********");
+				System.out.println("\n***********\t\t5: IMPORT FILE CSV / TEXT (.csv, .txt) \t\t***********");
 				System.out.print("\nInput link file that you want to imports: ");
 				file = scanner.nextLine();
 				file = scanner.nextLine();
@@ -86,7 +86,7 @@ public class Example {
 				break;
 			case 6:
 				// 6. Export file text
-				System.out.println("\n***********\t\t6: EXPORT FILE CSV \t\t***********");
+				System.out.println("\n***********\t\t6: EXPORT FILE CSV / TEXT (.csv, .txt) \t\t***********");
 				System.out.print("\nInput link file that you want to exports: ");
 				file = scanner.nextLine();
 				file = scanner.nextLine();

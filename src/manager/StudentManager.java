@@ -143,11 +143,8 @@ public class StudentManager {
 			temp = scanner.next();
 			part = temp.split("\n");
 			note = part[0];
-//			if (note.length() >= 1 && file.contains(".txt") != true)
-//				note = note.replace(note.substring(note.length() - 1), "");
 			listStudent.add(new Student(id, name, score, image, address, note));
 			// System.out.print(scanner.next() + "|");
-
 		}
 		scanner.close();
 		System.out.println("\n========\tIMPORT FILE SUCCESSED\t============");
